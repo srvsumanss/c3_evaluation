@@ -9,7 +9,7 @@ export const BookCard = ({ id, imageUrl, title,section,price ,isbnNumber,descrip
     <img src={imageUrl} alt="" />
     <h2 className="title "><b>Title: </b>{title}</h2>
     <p className="section"><b>Section: </b>{section}</p>
-    <p className="price"><b>Price: </b>{price}</p>
+    <h2 className="price"><b>Price: </b>{price}</h2>
     <p className="isbnNumber"><b>isbnNumber: </b>{isbnNumber}</p>
     <p className="description"><b>description: </b>{description}</p>
     <p className="reviews"><b>reviews: </b>{reviews}</p>
