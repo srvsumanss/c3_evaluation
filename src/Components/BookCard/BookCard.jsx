@@ -5,9 +5,9 @@ export const BookCard = ({ id, imageUrl, title,section,price ,isbnNumber,descrip
 
 
   return (
-    <Link to={`/books/${id}`} > <div className="movie_card"> 
+    <Link to={`/books/${id}`} > <div className="book_card"> 
     <img src={imageUrl} alt="" />
-    <p className="title "><b>Title: </b>{title}</p>
+    <h2 className="title "><b>Title: </b>{title}</h2>
     <p className="section"><b>Section: </b>{section}</p>
     <p className="price"><b>Price: </b>{price}</p>
     <p className="isbnNumber"><b>isbnNumber: </b>{isbnNumber}</p>
