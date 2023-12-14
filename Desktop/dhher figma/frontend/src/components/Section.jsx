@@ -4,7 +4,7 @@ import anniversary from "../components/Assets/anniversary.png";
 export default function Section() {
   return (
     <>
-      <div className="h-screen mt-40  text-white">
+      <div className="md:h-screen mt-30  text-white ">
         <div className="flex flex-shrink-0 items-center justify-center  h-[3.125rem] text-white text-center  font-bold text-[2.0rem] leading-[50px] uppercase">
           COM<span className="font-bold text-blue-600">MEET</span>ED
         </div>
