@@ -1,16 +1,17 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Section from './Section';
 import DotsAnimation from './Animation';
 import About from './About';
+import Header from './Header';
 
 
 
 function Home() {
   return (
     <div>
-      <Navbar />
-      <DotsAnimation />
+    
+      <Header/>
+      <DotsAnimation/>
       <Section />
       <About/>
     </div>

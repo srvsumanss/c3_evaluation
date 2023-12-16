@@ -1,10 +1,12 @@
 import React from "react";
 import Slider from "./Slider";
+import Header from "./Header";
 
 export default function About() {
   return (
     <>
-      <div className="sm:flex-row-reverse md:fleflex-row relative bg-slate-400   ">
+    <Header/>
+      <div className=" sm:flex-row-reverse md:fleflex-row relative bg-slate-400   ">
         <div className="w-[60%]">
           <div className="mt-10 break-words">
             <div className="px-6 pt-6 md:flex  break-words">
