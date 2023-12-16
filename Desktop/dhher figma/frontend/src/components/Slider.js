@@ -53,7 +53,7 @@ const removeAnimation = ()=>{
 
   return (
     <>
-  <div className=''>
+  <div className=' md:mt-28'>
  
 <div ref={slideRef} className=" p-1   select-none relative flex justify-center items-center">
        <img className=' md:w-[22rem] m-0' src={featuredProducts[currentIndex]} alt=''/>

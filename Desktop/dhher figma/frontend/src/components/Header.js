@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import dheerLogo from "../components/Assets/dheerlogo.png";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="fixed top-0 w-full flex items-center font-semibold justify-between flex-wrap p-4 bg-slate-400 z-10">
-     <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+   <nav className="fixed top-0 w-full h-auto flex items-center font-semibold justify-between flex-wrap p-4 bg-black z-10">
+     <div className="flex items-center flex-shrink-0 text-white sm:mr-0 lg:mr-72">
        <img src={dheerLogo} className="w-100 h-10 rounded-xl mr-2" alt="Logo" />
-       <a href="#" className="block mt-0 lg:inline-block lg:mt-0 text-white-200 ml-10">
+       <NavLink to="/" className="block mt-0 lg:inline-block lg:mt-0 text-white-200 ml-10">
            DHEER MARKETING (I) PVT LTD
-         </a>
+         </NavLink>
      </div>
      <div className="block lg:hidden">
        <button
@@ -38,18 +39,18 @@ function Header() {
      >
        <div className="text-sm  text-white lg:flex-grow">
         
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <NavLink to="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            About Us
-         </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         </NavLink>
+         <NavLink to="/our-business" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            OUR BUSINESS
-         </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         </NavLink>
+         <NavLink to="/product" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            PRODUCTS
-         </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         </NavLink>
+         <NavLink to="/industry-application" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            INDUSTRY AND APPLICATION
-         </a>
+         </NavLink>
        </div>
        <div>
          <button className="inline-flex items-center bg-gray-400 border-0 py-2 px-4 text-white">
