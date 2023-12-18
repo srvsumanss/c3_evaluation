@@ -7,6 +7,7 @@ import WhyDheer from './WhyDheer';
 import Footer from './Footer';
 import BrandsPatner from './BrandsPatner';
 
+
 function Home() {
   return (
     <div>
@@ -17,7 +18,7 @@ function Home() {
       <About/>
       <WhyDheer/>
       <BrandsPatner/>
-      <Footer/>
+      <Footer />
   
     
     </div>

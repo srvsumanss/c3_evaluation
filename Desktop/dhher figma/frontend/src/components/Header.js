@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import dheerLogo from "../components/Assets/dheerlogo.png";
 import { NavLink } from 'react-router-dom';
+import RequestForm from './ContactUs';
 
 function Header() {
  const [isOpen, setIsOpen] = useState(false);
@@ -45,17 +46,17 @@ function Header() {
          <NavLink to="/our-business" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            OUR BUSINESS
          </NavLink>
-         <NavLink to="/product" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-           PRODUCTS
+         <NavLink to="/chairmain-message" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+           CHAIRMAIN MESSAGE
          </NavLink>
          <NavLink to="/industry-application" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            INDUSTRY AND APPLICATION
          </NavLink>
        </div>
        <div>
-         <button className="inline-flex items-center bg-gray-400 border-0 py-2 px-4 text-white">
-           Click Me
-         </button>
+         <NavLink to="/contact-us" className="inline-flex items-center bg-gray-400 border-0 py-2 px-4 text-white ">
+           Contact Us
+         </NavLink>
        </div>
      </div>
    </nav>

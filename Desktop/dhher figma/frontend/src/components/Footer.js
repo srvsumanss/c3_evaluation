@@ -1,8 +1,10 @@
 import React from 'react'
 import footer_dheerlogo from "../components/Assets/footer-logo.png"
+import { NavLink, to } from 'react-router-dom'
 
 
 export default function Footer() {
+   
   return (
     <div>
        
@@ -14,14 +16,14 @@ export default function Footer() {
             <h1>Dheer Marketing India</h1>
         </div>
         <div >
-            <ul className='flex flex-row md:flex-row justify-center items-center space-x-4 my-3 text-normal'>
-                <li className='hover:underline hover:underline-offset-8 cursor-pointer'>Home</li>
-                <li className='hover:underline  hover:underline-offset-8  cursor-pointer'>About Us</li>
-                <li className='hover:underline  hover:underline-offset-8  cursor-pointer'>Brands</li>
-                <li className='hover:underline  hover:underline-offset-8  cursor-pointer'>Our Teams</li>
-                <li className='hover:underline  hover:underline-offset-8  cursor-pointer'>News Media</li>
-                <li className='hover:underline  hover:underline-offset-8  cursor-pointer'>Contact Us</li>
-                <li className='hover:underline hover:underline-offset-8  cursor-pointer'>Chairman Message</li>
+            <ul className='flex flex-col md:flex-row justify-center items-center space-x-4 my-3 text-normal'>
+                <NavLink to="/" className='hover:underline hover:underline-offset-8 cursor-pointer pl-2'>Home</NavLink>
+                <NavLink to="/about"  className='hover:underline  hover:underline-offset-8  cursor-pointer'>About Us</NavLink>
+                <NavLink to="/"  className='hover:underline  hover:underline-offset-8  cursor-pointer'>Brands</NavLink>
+                <NavLink to="/"  className='hover:underline  hover:underline-offset-8  cursor-pointer'>Our Teams</NavLink>
+                <NavLink to="/"  className='hover:underline  hover:underline-offset-8  cursor-pointer'>News Media</NavLink>
+                <NavLink to="/contact-us"  className='hover:underline  hover:underline-offset-8  cursor-pointer'>Contact Us</NavLink>
+                <NavLink to="/chairmain-message"  className='hover:underline hover:underline-offset-8  cursor-pointer'>Chairman Message</NavLink>
             </ul>
         </div>
         <div className='flex flex-row justify-center items-center space-x-5 my-5' > 

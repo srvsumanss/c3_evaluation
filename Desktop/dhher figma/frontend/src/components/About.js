@@ -1,9 +1,19 @@
 import React from "react";
 import Slider from "./Slider";
 import Header from "./Header";
+import Footer from "./Footer";
+import { useSearchParams } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
+
+
 
 
 const About = () => {
+
+  const location = useLocation();
+
+  const showFooter = location.pathname === '/about'
+
   return (
     <>
       <Header />
@@ -52,9 +62,16 @@ const About = () => {
         <div className="w-full lg:w-1/2 p-4">
           <Slider />
         </div>
+      
+      
       </div>
 
-          
+       <div >
+       <div className="bg-black">
+       {showFooter ? <Footer /> : null}
+
+        </div>
+       </div>
       
       
     </>
