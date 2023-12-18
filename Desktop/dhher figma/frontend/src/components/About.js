@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "./Slider";
 import Header from "./Header";
-import aboutImg from "../components/Assets/about-img.png";
+
 
 const About = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap bg-black">
         <div className="w-full lg:w-1/2 p-4 md:mt-28 text-black">
           <h2 className="text-3xl font-bold mb-4 text-sky-400">About Us</h2>
           <p className="text-white">
@@ -53,6 +53,10 @@ const About = () => {
           <Slider />
         </div>
       </div>
+
+          
+      
+      
     </>
   );
 };
